@@ -66,6 +66,7 @@ class Animal
 		return dailyAmount;
 	}
 	
+	/** Method for getting the animal's weight category */
 	public String determineWeight() 
 	{
 		String category = null;
@@ -94,6 +95,7 @@ class Animal
 		return category;
 	}
 	
+	/** Method for getting the animal's weekly amount */
 	public double getWeeklyAmount() 
 	{
 		final int WEEKLY_MULTIPLIER = 7;
@@ -102,6 +104,7 @@ class Animal
 		return weeklyAmount;
 	}
 	
+	/** method for displaying the animal's details */
 	public void displayAnimalDetails() 
 	{
 		System.out.println("Name: " + name);
