@@ -8,7 +8,7 @@ public class animalRescueCenter02 {
 		
 		displayOverview();
 		
-		animal1.displayAnimalDetails();
+		animal1.displayAnimalAnalysis();
 
 	}
 	
@@ -67,7 +67,7 @@ class Animal
 	}
 	
 	/** Method for getting the animal's weight category */
-	public String determineWeight() 
+	public String determineWeightCategory() 
 	{
 		String category = null;
 		
@@ -96,7 +96,7 @@ class Animal
 	}
 	
 	/** Method for getting the animal's weekly amount */
-	public double getWeeklyAmount() 
+	public double calculateWeeklyFood() 
 	{
 		final int WEEKLY_MULTIPLIER = 7;
 		double weeklyAmount = dailyAmount * WEEKLY_MULTIPLIER;
@@ -105,13 +105,13 @@ class Animal
 	}
 	
 	/** method for displaying the animal's details */
-	public void displayAnimalDetails() 
+	public void displayAnimalAnalysis() 
 	{
 		System.out.println("Name: " + name);
 		System.out.println("Species: " + species);
 		System.out.printf("Weight: %.1f lbs \n", weight);
-		System.out.println("Weight Category: " + determineWeight());
+		System.out.println("Weight Category: " + determineWeightCategory());
 		System.out.printf("Daily food amount: %.2f \n", dailyAmount);
-		System.out.printf("Weekly food amount: %.2f", getWeeklyAmount());
+		System.out.printf("Weekly food amount: %.2f", calculateWeeklyFood());
 	}
 }
