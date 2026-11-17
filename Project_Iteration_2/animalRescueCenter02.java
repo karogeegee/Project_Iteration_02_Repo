@@ -71,7 +71,7 @@ class Animal
 	{
 		String category = null;
 		
-		if (weight < 20) 
+		if (weight > 0 && weight < 20) 
 		{
 			category = "Small";
 		}
